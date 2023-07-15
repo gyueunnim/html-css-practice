@@ -7,14 +7,18 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" style="font-size: 0px;">
         <div class="header"></div>
         <!-- 
             div는 display:block 속성이 있어서 가로행을 전부 차지한다.
             float: left 활용
+            또는
+            display: inline-block 활용 (공백 제거 해야함) -> 귀찮기 때문에 거의 float 활용 (공백 제거 필요, 글이 있으면 가끔 이상해지기 때문)
          -->
         <div class="left-menu"></div>
-        <div class="right"></div>
+        <div class="right" style="font-size: 10px; vertical-align: top;">
+            <p>안녕하세요</p>
+        </div>
          <!-- clear: both를 줘서 float 다음에 오는 이상한 현상 해결 -->
          <div class="footer"></div>
     </div>
