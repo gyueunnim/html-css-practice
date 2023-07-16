@@ -81,6 +81,7 @@
 
     /* filter: brightness(70%); */
     padding: 1px;
+    text-align: center;
  }
 
  .main-title {
@@ -92,13 +93,30 @@
 
  .main-content {
     color: white;
-    text-align: center;
     padding: 20px;
  }
 
- .main-btn {
+ .main-button {
+    padding: 15px;
+    font-size: 20px;
     background-color: white;
-    display: inline;
-    padding: 10px;
+    border: none;
     border-radius: 5px;
+
+    /* position 부여하면 좌표이동가능, 공중에 뜸 */
+    position: relative;
+    /* 
+    relative : 내 원래 위치가 고정
+    static : 좌표이동 X, 
+    fixed : 화면 고정, 
+    absolute 부모 태그 기준 - (position: relative  가진 부모 기준  
+    */
+
+    /* 
+    position: absolute 가운데 정렬 방법
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px; (적당히 아무렇게 주면 됨)
+    */
  }
