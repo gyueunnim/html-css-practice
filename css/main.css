@@ -82,6 +82,7 @@
     /* filter: brightness(70%); */
     padding: 1px;
     text-align: center;
+    position: relative;
  }
 
  .main-title {
@@ -120,3 +121,32 @@
     width: 150px; (적당히 아무렇게 주면 됨)
     */
  }
+
+ .explain-box {
+    background-color: #eee;
+    /* 반응형 웹페이지 만들고 싶으면 % 자주 사용함 */
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    /* z-index 높을 수록 앞에 온다 */
+    box-sizing: border-box;
+ }
+
+ /* 써놓고 개발하면 편함
+div {
+    box-sizing: border-box; 
+}
+body {
+    margin: 0px;
+}
+normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 스타일 가능)
+혹은 <link rel="" href="">에 추가
+*/
+
+  div {
+    box-sizing: border-box;
+  }
