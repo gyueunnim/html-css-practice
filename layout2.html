@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hw.css">
 </head>
 <body style="margin: 0px;">
 
@@ -25,14 +26,12 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo ipsum quos, voluptatem sequi aut voluptate vitae ad laborum, nam quam at aliquid, aspernatur accusantium. Nesciunt impedit eligendi sapiente ipsam.
     </div>
 
-    <br/>
-
     <!-- width에 600px줘도 padding: 50px이면 실제로 700px로 보임;; -->
     <!-- padding, border 포함하라고 css에 속성 추가 box-sizing: border box -->
-    <div class="explain-box" style="padding: 50px;">
+    <!-- <div class="explain-box" style="padding: 50px;">
         <h3>How we desgin our shoes</h3>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo ipsum quos, voluptatem sequi aut voluptate vitae ad laborum, nam quam at aliquid, aspernatur accusantium. Nesciunt impedit eligendi sapiente ipsam.
-    </div>
+    </div> -->
 
     <!-- <form>
         <input type="text" placeholder="배경글자" name="age">
@@ -49,11 +48,44 @@
         <input type="submit">
         <button type="submit"></button>
     </form> -->
-    <form>
-        <input type="text" class="text-input">
-        <input type="text">
-        <button type="submit">제출</button>
-    </form>
+    <div class="bg-black">
+        <div class="bg-white">
+            <p class="hw-title">contact us</p>
+            <form>
+                <div class="w-100">
+                    <p>Your Email</p>
+                    <input type="email" placeholder="email@example.com">
+                </div>
+
+                <div class="w-50">
+                    <p>First name</p>
+                    <input type="text">
+                </div>
+                <div class="w-50">
+                    <p>Last name</p>
+                    <input type="text">
+                </div>
+
+
+                <div style="clear: both;"></div>
+
+                <div class="hw-msg w-100">
+                    <p>Message</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="hw-footer w-100">
+                    <div class="hw-check">
+                        <input type="checkbox" id="sub"> <label for="sub">Subscribe</label>
+                    </div>
+                    <div class="hw-btn">
+                        <button type="submit" class="hw-button">SEND</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>

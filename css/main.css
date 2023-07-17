@@ -152,7 +152,7 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
   }
 
   /* select 문법 input 중 type이 text인 것들 */
-input[type=text] {
+/* input[type=text] {
     padding: 10px;
     font-size: 20px;
     border: 1px solid black;
@@ -164,4 +164,20 @@ input[type=text] {
     font-size: 20px;
     border: 1px solid black;
     border-radius: 5px;
+} */
+
+/* 재사용 가능한 css/ */
+.w-50 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.w-50 > p {
+    margin-top: 0px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
 }

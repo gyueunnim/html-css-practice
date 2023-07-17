@@ -1,28 +1,28 @@
-body {
-    margin: 0px;
-}
-
-div {
-    box-sizing: border-box;
-}
-
 p {
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
-.title {
+.hw-title {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 30px;
 }
 
-.container {
-    width: 80%;
+.bg-black {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+.bg-white {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
 .hw-name {
@@ -70,6 +70,7 @@ textarea {
 .hw-footer {
     margin-top: 15px;
     font-size: 15px;
+    height: 50px;
 }
 
 .hw-check {
@@ -83,7 +84,7 @@ textarea {
     text-align: right;
 }
 
-button {
+.hw-button {
     background-color: rgb(241, 174, 49);
     border: white;
     color: white;
@@ -95,3 +96,4 @@ button {
     padding-bottom: 8px;
     border-radius: 3px;
 }
+
