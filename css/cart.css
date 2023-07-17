@@ -1,0 +1,88 @@
+body, p {
+    margin: 0px;
+}
+
+
+div, input {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+td {
+    padding: 10px;
+    padding-right: 20px;
+    border: 1px solid rgba(105, 160, 177, 0.541);
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+th {
+    padding-right: 20px;
+}
+/* vertical-align은 inline/inline-block 요소 간 세로 정렬할 때 사용한다 */
+/* table 안에서 세로정렬할 때 vertical-align을 쓰는데 top/middle/bottom만 가능하다 */
+/* display: inline은 항상 옆으로 채워지는 폭과 너비가 없는 요소이다 */
+
+
+.tr {
+    text-align: right;
+}
+
+.container {
+    width: 80%;
+    max-width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-title {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.cart-thead {
+    height: 25px;
+    font-size: 12px;
+}
+
+.cart-item {
+    width: 100%;
+}
+
+.h-70 {
+    height: 70px;
+    vertical-align: middle;
+}
+
+.table-right {
+    text-align: right;
+}
+
+.btn {
+    background-color: rgb(29, 57, 117); 
+    color: white; 
+    font-size: 13px;
+    padding: 20px; 
+    padding-left: 25px; 
+    padding-right: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* td 폭조정시 하나만 바꿔도 다 바뀐다 -> 편리함을 위해 */
+
+/* 
+굳이 클래스 안 써도 됨!
+.cart-table th:nth-child() {
+    width: ;
+} 
+*/
