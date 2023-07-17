@@ -76,6 +76,7 @@ th {
     padding-right: 25px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 /* td 폭조정시 하나만 바꿔도 다 바뀐다 -> 편리함을 위해 */
@@ -86,3 +87,35 @@ th {
     width: ;
 } 
 */
+
+/* pseudo-class */
+/* hover, focus, active 순으로 사용 */
+/* 이런게 있구나... 필요할 때 구글링 찾아쓰기 */
+.btn:hover {
+    background-color: chocolate;
+
+}
+.btn:focus {
+    background-color: grey;
+}
+.btn:active {
+    background-color: brown;
+}
+
+.input-test {
+    font-size: 20px;
+}
+.input-test:focus {
+    border-bottom: 4px solid red;
+}
+
+.custom-link {
+    text-decoration: none;
+}
+.custom-link {
+    color: violet;
+}
+
+.custion-link:visited {
+    color: black;
+}
