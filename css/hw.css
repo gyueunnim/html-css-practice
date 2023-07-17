@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hw-name {
+    width: 100%;
+}
+
+.hw-first {
+    width: 48%;
+    float: left;
+}
+
+.hw-name-mid {
+    width: 4%;
+    float: left;
+}
+
+.hw-last {
+    width: 48%;
+    float: left;
+}
+
+input {
+    border: solid 2px gainsboro;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type=email] {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    border: solid 2px gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.hw-footer {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.hw-check {
+    width: 50%;
+    float: left;
+}
+
+.hw-btn {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+button {
+    background-color: rgb(241, 174, 49);
+    border: white;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+}
