@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'nanumsquare';
+    src: url(./font/NanumSquareR.woff);
+}
+
+body {
+    margin: 0px;
+    font-family: 'nanumsquare';
+}
+
+p {
+    margin: 2px;
+}
+
+.ftwb {
+    font-weight: bold;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.container {
+    width: 100vw;
+}
+
+.item {
+    width: 25%;
+    float: left;
+}
+
+@media screen and (max-width: 992px) {
+    .item {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .item {
+        float: none;
+        width: 100%;
+    }
+}
