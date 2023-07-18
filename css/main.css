@@ -181,3 +181,31 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
     width: 100%;
     padding: 10px;
 }
+
+/* 부모에 display: flex를 통해 가로배치 쉽게 가능 */
+.flex-container {
+    height: 50px;
+    display: flex;
+    background-color: rgb(251, 92, 92);
+    /* flex 이용 시, 정렬 */
+    /* justify-content: center; */
+
+    /* 반응형 웹에서 유용 */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+
+    /* flex-wrap: wrap; */
+    /* 넓이가 넘치면 column으로 보여준다 */
+
+    /* 가운데 정렬 */
+    align-items: center;
+    justify-items: center;
+    
+    font-size: 22px;
+    color: white;
+}
+.flex-item {
+    width: 100px;
+    padding: 10px;
+    margin-right: 5px;
+}
