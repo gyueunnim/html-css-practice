@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/hw.css">
-    <link rel="stylesheet" href="./css/font-test.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/hw.css" />
+    <link rel="stylesheet" href="./css/font-test.css" />
+  </head>
+  <body>
     <div class="flex-container">
-        <div class="flex-item" style="font-weight: bold;">ShooShop</div>
-        <div style="flex-grow: 1;"></div>
-        <div class="flex-item">products</div>
-        <!-- flex-grow: 2의 의미는 박스 크기를 비율로 조정 가능 -->
-        <!-- navbar 만들 때 유용 -->
-        <div class="flex-item">services</div>
+      <div class="flex-item" style="font-weight: bold">ShooShop</div>
+      <div style="flex-grow: 1"></div>
+      <div class="flex-item">products</div>
+      <!-- flex-grow: 2의 의미는 박스 크기를 비율로 조정 가능 -->
+      <!-- navbar 만들 때 유용 -->
+      <div class="flex-item">services</div>
     </div>
 
     <div class="main-background">
-        <h4 class="main-title">Buy Our Shoes!</h4>
-        <!--
+      <h4 class="main-title">Buy Our Shoes!</h4>
+      <!--
              margin collapse 현상 발생 
              margin이 겹쳐서 하나로 인식된다.
              테두리 안붙게 배경에 padding: 1px 추가.
              박스끼리 붙는 경우도 발생함. 유의하기
          -->
-         <p class="main-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolorum vero! Minus voluptates, laborum molestiae magni pariatur est ut ipsam vero, quia placeat laboriosam aliquam hic, corporis aspernatur at mollitia.
-         </p>
-        <button class="main-button">구매하기</button>
+      <p class="main-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolorum
+        vero! Minus voluptates, laborum molestiae magni pariatur est ut ipsam
+        vero, quia placeat laboriosam aliquam hic, corporis aspernatur at
+        mollitia.
+      </p>
+      <button class="main-button">구매하기</button>
     </div>
     <div class="explain-box">
-        <h3>How we desgin our shoes</h3>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo ipsum quos, voluptatem sequi aut voluptate vitae ad laborum, nam quam at aliquid, aspernatur accusantium. Nesciunt impedit eligendi sapiente ipsam.
+      <h3>How we desgin our shoes</h3>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo ipsum
+      quos, voluptatem sequi aut voluptate vitae ad laborum, nam quam at
+      aliquid, aspernatur accusantium. Nesciunt impedit eligendi sapiente ipsam.
     </div>
 
     <!-- width에 600px줘도 padding: 50px이면 실제로 700px로 보임;; -->
@@ -59,43 +63,62 @@
         <button type="submit"></button>
     </form> -->
     <div class="bg-black">
-        <div class="bg-white">
-            <p class="hw-title">contact us</p>
-            <form>
-                <div class="w-100">
-                    <p>Your Email</p>
-                    <input type="email" placeholder="email@example.com">
-                </div>
+      <div class="bg-white">
+        <p class="hw-title">contact us</p>
+        <form>
+          <div class="w-100">
+            <p>Your Email</p>
+            <input type="email" placeholder="email@example.com" />
+          </div>
 
-                <div class="w-50">
-                    <p>First name</p>
-                    <input type="text">
-                </div>
-                <div class="w-50">
-                    <p>Last name</p>
-                    <input type="text">
-                </div>
+          <div class="w-50">
+            <p>First name</p>
+            <input type="text" />
+          </div>
+          <div class="w-50">
+            <p>Last name</p>
+            <input type="text" />
+          </div>
 
+          <div style="clear: both"></div>
 
-                <div style="clear: both;"></div>
+          <div class="hw-msg w-100">
+            <p>Message</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
 
-                <div class="hw-msg w-100">
-                    <p>Message</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
-                <div class="hw-footer w-100">
-                    <div class="hw-check">
-                        <input type="checkbox" id="sub"> <label for="sub">Subscribe</label>
-                    </div>
-                    <div class="hw-btn">
-                        <button type="submit" class="hw-button">SEND</button>
-                    </div>
-                </div>
-
-            </form>
-        </div>
+          <div class="hw-footer w-100">
+            <div class="hw-check">
+              <input type="checkbox" id="sub" />
+              <label for="sub">Subscribe</label>
+            </div>
+            <div class="hw-btn">
+              <button type="submit" class="hw-button">SEND</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    
-</body>
+
+    <!-- Beautify : 코드를 예쁘게 정렬하고 싶을 때 사용하는 기능 -->
+    <!-- 더럽게 코딩해도 VScode에서 우클릭 후 Format Document -->
+
+    <!-- Emmet : 더욱 편리한 자동 완성 기능 -->
+    <!-- div.container>div -->
+    <!-- 결과
+        <div class="container">
+            <div></div>
+        </div> 
+    -->
+  </body>
 </html>
+<!-- Emmet 예시 -->
+<!-- 
+div#header>p.title*3
+
+    <div id="header">
+        <p class="title"></p>
+        <p class="title"></p>
+        <p class="title"></p>
+    </div> 
+-->
