@@ -209,3 +209,38 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
     padding: 10px;
     margin-right: 5px;
 }
+
+.test {
+    /* vw는 viewport로 우리가 지금 보는 화면 크기이다 */
+    /* 반응형에서 자주 사용한다 */
+    width: 100vw;
+    height: 100px;
+    background: grey;
+}
+
+/* media query 보통 css 최하단에 적는다 */
+/* 1200px 이하에서는 이렇게 동작한다 */
+/* 큰 것부터 작은 순으로 */
+/* 1200px: 테블릿, 768px: 모바일 등 breakpoint (3, 4개 정도만)*/
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+    .flex-item {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 15px;
+    }
+}
+
+/* media print : 인쇄할 때 */
