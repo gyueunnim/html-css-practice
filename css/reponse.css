@@ -3,12 +3,7 @@
     src: url(./font/NanumSquareR.woff);
 }
 
-body {
-    margin: 0px;
-    font-family: 'nanumsquare';
-}
-
-p {
+.r-container > p {
     margin: 2px;
 }
 
@@ -21,24 +16,24 @@ div, input, textarea {
     padding: 5px;
 }
 
-.container {
+.r-container {
     width: 100vw;
 }
 
-.item {
+.r-item {
     width: 25%;
     float: left;
 }
 
 @media screen and (max-width: 992px) {
-    .item {
+    .r-item {
         float: left;
         width: 50%;
     }
 }
 
 @media screen and (max-width: 592px) {
-    .item {
+    .r-item {
         float: none;
         width: 100%;
     }

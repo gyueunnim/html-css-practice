@@ -231,15 +231,34 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
     }
 }
 
+@media screen and (max-width: 992px) {
+    .r-item {
+        float: left;
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-title {
         font-size: 20px;
     }
 }
 
+@media screen and (max-width: 592px) {
+    .r-item {
+        float: none;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .main-title {
         font-size: 15px;
+    }
+    .w-50 {
+        float: none;
+        width: 100%;
+        padding: 10px;
     }
 }
 
