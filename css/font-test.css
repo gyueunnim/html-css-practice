@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'nanumsquare';
+    src: url(./font/NanumSquareR.woff);
+}
+
+/* 한글폰트는 사이즈 너무 큼 -> 로딩 시간 커짐 */
+/* 한글폰트는 1~2개만 사용하기... */
+/* 용량을 줄이기 위해선 웹용인 .woff를 사용하자 */
+
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'nanumsquare', 'gulim';
+    /* font-weight: 900; */
+    /* font-weight는 그냥 주면 이쁘지 않음 */
+    /* nanumsquareB를 써야한다 (Bold) */
+
+    /* gulim은 crips가 발생 -> 글자 깨진다 */
+    /* 폰트를 부드럽게 처리하려면 회전시키야 한다 */
+    /* 맥은 알아서 글자를 부드럽게 해준다. */
+}
+
+p, h4, h3, h2, h1, span {
+    transform: rotate(0.03deg);
+}
+
+/* @font-face {
+    font-family: 'nanumsquareB';
+    font-weight: 900;
+    src: url(./font/NanumSquareB.woff);
+} */
+
+/* 호환성을 위해선 eot 등 더 추가 구성 필요 */
+/* Google Fonts는 폰트파일을 호스팅해준다 - 구글이 해줌*/
