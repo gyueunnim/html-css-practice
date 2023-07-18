@@ -218,6 +218,47 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
     background: grey;
 }
 
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 15px;
+}
+
+.shop-item img {
+    width: 100%;
+    display: block; /* 검정색 삐져나오는 부분 없애줌 */
+}
+
+.overlay {
+    /* 부모 요소에 position: relative를 선언하고 absolute를 통해 위에 띄운다 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    /* transition을 통해 애니메이션 효과 부여
+    자바스크립트를 모르면 hover가 최선이다
+    */
+    transition: all 1s; 
+    /* transition: opacity 1s;  */
+    /* 속도를 바꿀 수 있음
+     transition-timing-function: cubic-bezier();
+     */
+}
+
+.overlay:hover {
+    opacity: 1;
+}
 /* media query 보통 css 최하단에 적는다 */
 /* 1200px 이하에서는 이렇게 동작한다 */
 /* 큰 것부터 작은 순으로 */
