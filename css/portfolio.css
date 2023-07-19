@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    font-size: 12px;
+}
+
+div {
+    margin: 0px;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.container {
+
+}
+
+.main {
+    display: flex;
+    background-color: mediumslateblue;
+    color: white;
+}
+
+.main-content {
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.main-img {
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.btn {
+    background-color: rgb(74, 74, 74);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.explain {
+    text-align: center;
+    padding: 50px;
+}
+
+.explain-content {
+    font-size: 12px;
+}
+
+.offer {
+    text-align: center;
+    padding: 50px;
+    background-color: mediumslateblue;
+    color: white;
+}
+
+.offer-fontawesome {
+    display: flex;
+}
+
+.offer-item {
+    width: 25%;
+}
+
+.offer-item > i {
+    background-color: white;
+    color: mediumslateblue;;
+    width: 75px;
+    height: 55px;
+    border-radius: 50px;
+    padding-top: 20px;
+}
+
+.do {
+    padding-top: 50px ;
+}
+
+.do-title {
+    text-align: center;
+}
+
+.do-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+.do-content-img {
+    float: left;
+    width: 50%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    margin: 0px;
+    color: white;
+    position: relative;
+    transition: all 1s;
+    background-clip: content-box;
+    /* TODO: 배경말고 img로 수정하기 */
+}
+
+.do-content-img:hover {
+    opacity: 1;
+    width: 50%;
+    padding: 2.5%
+}
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.footer-fontawesome {
+    display: flex;
+    text-align: center;
+}
+
+.footer-item {
+    width: 33%;
+}
+
+.footer-item i {
+    color: white;
+    font-size: 15px;
+    background-color: mediumslateblue;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+        display: block;
+        text-align: center;
+    }
+    .main-content {
+        width: 100%;
+    }
+    
+    .main-img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
