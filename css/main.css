@@ -231,7 +231,7 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
 
 .shop-item {
     width: 33%;
-    padding: 15px;
+    padding: 10px;
 }
 
 .shop-item img {
@@ -259,6 +259,35 @@ normalize.css 도 복붙하고 시작하면 좋음 (브라우저 간 균일한 �
 .overlay:hover {
     opacity: 1;
 }
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* overflow: hidden을 통해 넘치는 것 안보여준다 */
+}
+
+/* overlay-wrap에 마우스를 올리면 그 안의 overlay-black을 수정 */
+.overlay-wrap:hover .overlay-black {
+    margin-top: 50%;
+}
+
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.price {
+    color: white;
+}
+/* 크롬 개발자도구에서 Animations를 통해 다른사이트 참고할 수 있다 */
+
+
 /* media query 보통 css 최하단에 적는다 */
 /* 1200px 이하에서는 이렇게 동작한다 */
 /* 큰 것부터 작은 순으로 */
