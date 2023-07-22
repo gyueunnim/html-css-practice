@@ -97,3 +97,33 @@ textarea {
     border-radius: 3px;
 }
 
+/* 
+pseudo-class: 다른상태일 때
+pseudo-element: 내부의 일부분만 스타일 줄 때
+*/
+
+.pseudo::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+/* first-line */
+/* after 맨 뒤에 추가*/
+/* before: 맨 앞에 추가 */
+
+.r-container::after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.input-file::file-selector-button {
+    background: skyblue;
+    border: none;
+    padding: 20px;
+}
+
+.input-file::file-selector-button:hover {
+    background-color: blue;
+}
