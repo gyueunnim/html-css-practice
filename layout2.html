@@ -27,6 +27,7 @@
 
     <!-- <div class="test"></div> -->
 
+
     <div class="main-background">
       <h4 class="main-title">Buy Our Shoes! Now on Sale</h4>
       <!--
@@ -60,7 +61,23 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo ipsum quos, voluptatem sequi aut voluptate vitae ad laborum, nam quam at aliquid, aspernatur accusantium. Nesciunt impedit eligendi sapiente ipsam.
     </div> -->
 
-    <input type="file" class="input-file">
+    <!-- <input type="file" class="input-file"> -->
+    <!-- Pesudo element는 내부 일부만 스타일 주고 싶을 때 쓴다 -->
+    <!-- <input type="file"> -->
+    <!-- 파일선택과 같은 버튼에 css 주고 싶을 때 사용 -->
+
+    <style>
+      /* -webkit은 chrome, 사파리, Edge에서 동작 */
+      /* 브라우저마다 shadow DOM 확인*/
+      input[type=file]::-webkit-file-upload-button {
+        background: skyblue;
+        border: none;
+      }
+
+      /* 실제로는 파일 업로드 버튼을 */
+      /* <label>안녕</label>
+         <input type="file"> 과 같이 label을 사용하는게 흔하다 */
+    </style>
     
     <div class="r-container">
       <div class="r-item">
