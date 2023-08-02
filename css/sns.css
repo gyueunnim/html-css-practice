@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    background:  #dedede60;
+}
+
+div, p {
+    margin: 0px;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.user-info-border {
+    border-right: 2px solid;
+}
+
+.user-info-location {
+    color:  #6fbaf8;
+}
+
+.btn-color {
+    background-color: #6fbaf8;
+    color: white;
+}
+
+.user-main {
+    background: #dedede60;
+}
+
+.user-main-nav {
+    border-bottom: 2px solid #bcbcbc60;
+    color: #6fbaf8;
+    font-weight: bold;
+}
+
+.user-main-nav > p {
+    text-align: center;
+    border-bottom: 3px solid #6fbaf8;
+    width: 10%
+}
