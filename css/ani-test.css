@@ -1,0 +1,50 @@
+.ani-text {
+    text-align: center;
+    /* animation을 위해 자주 사용한다. */
+
+    /* 회전 */
+    /* transform: rotate(360deg);  */
+
+    /* 좌표이동 */
+    /* transform: translateY(); */
+
+    /* 크기 변화 */
+    /* transform: scale(); */
+
+    /* transition은 a -> b만 가능 */
+
+}
+
+.ani-text:hover {
+    animation: move;
+    animation-duration: 1s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* transform 좋다 => 성능이 좋다. */
+/* 뭐든 구현에서 그치면 초보 */
+/* 구현 다음 성능, 확장성 중요 */
+/* will-change, 3D animation 사용하면 성능 개선 가능 */
+/* margin은 변경이 느림...! */
+/* 이유: Composite 단계에서 동작함 (다른 쓰레드에서 처리해줌)  */
+/* 원래 웹브라우저는 쓰레드 1개만 사용 */
+
+/* 브라우저가 그림 그리는 순서  */
+/* 1. Render Tree 만들기 */
+/* 2. Layout 잡기 */
+/* 3. Paint 하기 */
+/* 4. Composite 처리 */
