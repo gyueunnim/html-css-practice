@@ -1,0 +1,16 @@
+@use 'reset';
+h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 20px;
+  width: -1px;
+}
+
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
+}
+/*# sourceMappingURL=test3.css.map */

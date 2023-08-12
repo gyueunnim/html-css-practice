@@ -1,0 +1,10 @@
+// _(언더바)를 붙이면 css로 컴파일하지 않는다. 어차피 종속되기 때문에 컴파일이 필요 없음
+
+body {
+    margin: 0px;
+}
+div {
+    box-sizing: border-box;
+}
+
+$main-color: brown;
