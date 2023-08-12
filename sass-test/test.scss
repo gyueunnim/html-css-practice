@@ -12,3 +12,54 @@ $std-size: 16px;
     color: $sub-color;
     font-size: $std-size + 2px;
 }
+
+// nesting 문법
+// 관련 있는 class 묶을 때 좋음
+// 2개 이상 중첩 잘 안함
+
+.main-bg h4 {
+    font-size: 16px;
+}
+
+.main-bg button {
+    color: red;
+}
+
+.main-bg {
+    width: 100px;
+    h4 {
+        font-size: 16px;
+    }
+    button {
+        color: red;
+    }
+}
+
+// @extend 문법 - 중복 없애기
+// %임시클래스 : 단독으로 컴파일 되지 않는다.
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+// 실제 클래스 가져다가 사용도 가능하다.
+.btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn; // class 전체를 복사해준다
+    color: green;
+}
+
+.btn-red {
+    @extend .btn; // class 전체를 복사해준다
+    color: red;
+}
+
+.btn-blue {
+    @extend %btn; // class 전체를 복사해준다
+    color: blue;
+}
