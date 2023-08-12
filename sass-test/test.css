@@ -1,0 +1,21 @@
+/* css 변수 문법 */
+:root {
+  --main-color: red;
+}
+
+.background {
+  background-color: #2a4cb2;
+  font-size: 14px;
+  color: var(--main-color);
+
+  /* css 사칙연산 문법 */
+  font-size: calc(40px - 20px);
+  width: calc(40% - 20px);
+}
+
+.box {
+  width: 100%;
+  color: #eeeeee;
+  font-size: 18px;
+}
+/*# sourceMappingURL=test.css.map */
